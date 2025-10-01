@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/vinylListFragment">
+
+    <fragment
+        android:id="@+id/vinylListFragment"
+        android:name="br.ifsp.dm2.vinyllibrary.ui.fragments.VinylListFragment"
+        android:label="Lista de Vinyls"
+        tools:layout="@layout/fragment_vinyl_list">
+        <action
+            android:id="@+id/action_vinylList_to_addEditVinyl"
+            app:destination="@id/addEditVinylFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditVinylFragment"
+        android:name="br.ifsp.dm2.vinyllibrary.ui.fragments.AddEditVinylFragment"
+        android:label="Adicionar/Editar Vinyl"
+        tools:layout="@layout/fragment_add_edit_vinyl">
+        <argument
+            android:name="vinylId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

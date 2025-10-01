@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.VinylLibrary" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your MaterialComponents theme here -->
+    </style>
+</resources>
